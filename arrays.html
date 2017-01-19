@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="css/micss (2).css">
+<script>
+
+var was = ["Zapatillas","Camiseta","Pantalón","Calcetines"];
+
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas</i></p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+	  
+
+		document.write("<p> El Primer articulo es <strong>");
+		document.write(was[0] + "</strong></p>");
+		
+		document.write("<p> El ultimo elemento es <strong>");
+		document.write(was[was.length-1] + "</strong></p>");// acceso al ultimo elemento a la raid
+		
+		was.unshift("Balón");
+		document.write("<p> Casi nos olvidamos!!! Agregamos este elemento: <strong>");
+		document.write(was[0] + "</strong></p>");
+		
+		document.write("<p> Agrupemos un elemento más al final: <strong>");
+		was.push(prompt("Introduce un articulo"));
+		document.write(was[was.length-1] + "</strong></p>");
+		
+		document.write("<p>" + was[0] + "<br/>");
+		
+		document.write(was[1] + "<br/>");
+		document.write(was[2] + "<br/>");
+		document.write(was[3] + "<br/>");
+		document.write(was[4] + "<br/>");
+		document.write(was[5] + "<br/></p>");
+		
+		alert("Borrar Items");
+		was.shift();// borrar el primer elemento, para borrar el ultimo elemente pop
+		
+		document.write("<p>" + was[0] + "<br/>");
+		document.write(was[1] + "<br/>");
+		document.write(was[2] + "<br/>");
+		document.write(was[3] + "<br/>");
+		document.write(was[4] + "<br/></p>");
+		
+				
+		
+		
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>

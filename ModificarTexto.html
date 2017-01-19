@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>modificarTexto</title>
+<style>
+
+
+.micontenedor{
+
+	background-color:#EBDC13;	
+	
+}
+
+</style>
+
+<script src="jquery-3.1.1.min.js"></script>
+
+
+<script>
+
+
+function validar(){
+	
+	var n_usuario = document.getElementById("Usuario").value;
+	
+	 if (n_usuario==""){
+		
+		$("#Usuario").after("Rellena la informacion solicitada, por favor");
+		 
+	 }
+
+	
+}
+
+</script>
+
+
+<script>
+
+
+$(document).ready(function() {
+	
+	//alert($("#errores h2").html());
+	
+	//$("#errores").html("<p> Prueba de cambio de Texto con funcion HTML </p>");
+	$("#errores").append("<p> agrego nuevo texto </p>");
+	$("#errores").prepend("<p> agrego nuevo texto antes</p>");
+	$("#errores").before("<p> texto antes de contenedor errores </p>");
+	$("#errores").after("<p> texto despues de contenedor errores </p>");
+	$("#errores h2").text("Prueba de otro cambio de Texto con funcion text()");
+    
+});
+
+</script>
+
+	
+</head>
+
+<body>
+
+<form action="" method="get"></form>
+
+<input name="" type="text" id="Usuario"><br/>
+<input name="" type="text" id="Nonbre"><br/>
+<input name="" type="text" id="Apellido"><br/>
+
+<input type="button" value="Ingresa" onClick="validar()">
+
+
+</body>
+</html>

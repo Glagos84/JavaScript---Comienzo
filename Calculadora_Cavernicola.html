@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Calcu</title>
+
+<script>
+
+	funcion sumar(num1, num2)
+	{
+		
+	alert("La suma es: "  + (num1+num2));
+			
+	}
+	
+	
+	funcion sestar(num1, num2)
+	{
+		
+	alert("La Resta es: "  + (num1-num2));
+			
+	}
+	
+	funcion dividir(num1, num2)
+	{
+		
+	alert("La División es: "  + (num1/num2));
+			
+	}
+	
+	
+	funcion multiplicar(num1, num2)
+	{
+		
+	alert("La Multiplicar es: "  + (num1*num2));
+			
+	}
+	
+	var operacion = prompt("Que operación va a Realizar?");
+	var oper1 = prompt("Ingrese el primer numero");
+	var oper2 = prompt("Ingrese el segundo valor");
+	
+	if (operacion == "suma")
+	{
+		suma(oper1,oper2);
+	}
+	else if (operacion=="resta")
+	{
+		
+		resta(oper1,oper2);
+		
+	}else if (operacion =="dividir")
+	{
+		
+		dividir(oper1,oper2);
+		
+	}else if (operacion =="multiplicar")
+	{
+		
+		multiplicar(oper1,oper2);
+	}else {
+		
+		alert("Ingrese una operación valida, operación no valida");
+		
+	}
+	
+		
+
+</script>
+
+</head>
+
+<body>
+</body>
+</html>
